@@ -13,3 +13,8 @@ body {
 .link svg {
 	@apply text-sabor;
 }
+
+.link:hover svg,
+.link:active svg {
+	@apply text-sobral;
+}

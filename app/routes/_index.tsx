@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 
 import { SiInstagram, SiWhatsapp } from "@icons-pack/react-simple-icons";
+import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -24,50 +25,55 @@ export default function Index() {
 	return (
 		<div className=" h-screen w-screen flex flex-col">
 			<div className="h-56 bg-sabor">
-				<img src="./casa.jpg" alt="PARK" className="bg-center" />
+				<img
+					src="./casa.jpg"
+					alt="PARK"
+					className="bg-cover w-full bg-bottom"
+				/>
 			</div>
 			<div className="bg-familia h-full px-4">
 				<div className="bg-familia w-32 p-4 rounded-full mx-auto -mt-16">
 					<img src="./logo-park.png" alt="" />
 				</div>
 				<div className="flex flex-col mt-8 gap-2">
-					<a
-						href="https://parkchoppsobral.goomer.app/menu"
+					<Link
+						to="/delivery"
 						target="_blank"
 						rel="noreferrer"
 						className="link"
 					>
 						<BikeIcon className="size-8" />
 						<span>Pedir Delivery</span>
-					</a>
-					<a
-						href="https://parkchoppsobral.goomer.app/menu"
+					</Link>
+					<Link
+						to="/cardapio"
 						target="_blank"
 						rel="noreferrer"
 						className="link"
 					>
 						<BookIcon className="size-8" />
 						<span>Cardápio Completo</span>
-					</a>
-					<a
-						href="https://parkchoppsobral.goomer.app/menu"
+					</Link>
+					<Link
+						to="/happyhour"
 						target="_blank"
 						rel="noreferrer"
 						className="link"
 					>
 						<BeerIcon className="size-8" />
 						<span>Happy Hour</span>
-					</a>
+					</Link>
 
-					<a
-						href="https://wa.me/558821440310?text=Quero realizar um evento no PARK."
+					<Link
+						to="/eventos"
+						// to="https://wa.me/558821440310?text=Quero realizar um evento no PARK."
 						target="_blank"
 						rel="noreferrer"
 						className="link"
 					>
 						<CakeIcon className="size-8" />
 						Realize seu evento conosco
-					</a>
+					</Link>
 				</div>
 				<div className="flex gap-4 my-8 text-sm text-sobral justify-center">
 					<a
