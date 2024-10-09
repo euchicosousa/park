@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
 body {
-  @apply bg-white dark:bg-gray-950;
+	@apply antialiased;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+.link {
+	@apply bg-sobral flex py-5 px-6 text-xl text-familia rounded-xl tracking-tighter font-semibold gap-2 items-center hover:bg-sabor hover:text-sobral  active:bg-sabor active:text-sobral;
+}
+
+.link svg {
+	@apply text-sabor;
 }
