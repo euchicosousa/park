@@ -1,4 +1,3 @@
-import type { MetaFunction } from "@remix-run/node";
 import {
 	BeerIcon,
 	BikeIcon,
@@ -9,6 +8,7 @@ import {
 
 import { SiInstagram, SiWhatsapp } from "@icons-pack/react-simple-icons";
 import { Link } from "@remix-run/react";
+import { MetaFunction } from "@vercel/remix";
 
 export const meta: MetaFunction = () => {
 	return [
