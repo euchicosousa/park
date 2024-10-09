@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function Cardapio() {
+export default function Delivery() {
 	useEffect(() => {
 		location.href = "https://parkchoppsobral.goomer.app/menu";
 	}, []);

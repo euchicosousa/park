@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function Cardapio() {
+export default function Eventos() {
 	useEffect(() => {
 		location.href =
 			"https://wa.me/558821440310?text=Quero realizar um evento no PARK.";

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function Cardapio() {
+export default function HappyHour() {
 	useEffect(() => {
 		location.href = "https://parkchoppsobral.goomer.app/qrcode?hash=2eNZw";
 	}, []);

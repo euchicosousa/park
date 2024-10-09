@@ -1,14 +1,6 @@
-import {
-	BeerIcon,
-	BikeIcon,
-	BookIcon,
-	CakeIcon,
-	MapPinIcon,
-} from "lucide-react";
-
-import { SiInstagram, SiWhatsapp } from "@icons-pack/react-simple-icons";
 import { Link } from "@remix-run/react";
 import { MetaFunction } from "@vercel/remix";
+import { BeerIcon, BikeIcon, BookIcon, CakeIcon } from "lucide-react";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -82,7 +74,6 @@ export default function Index() {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<SiInstagram className="size-6" />
 						<span>Instagram</span>
 					</a>
 					<a
@@ -91,7 +82,7 @@ export default function Index() {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<MapPinIcon className="size-6" />
+						{/* <MapPinIcon className="size-6" /> */}
 						<span>Como chegar</span>
 					</a>
 					<a
@@ -100,7 +91,6 @@ export default function Index() {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<SiWhatsapp className="size-6" />
 						<span>WhatsApp</span>
 					</a>
 				</div>
