@@ -1,6 +1,6 @@
 import { Link } from "@remix-run/react";
 import { MetaFunction } from "@vercel/remix";
-import { BeerIcon, BikeIcon, BookIcon, CakeIcon } from "lucide-react";
+import { BeerIcon, BikeIcon, BookIcon, MartiniIcon } from "lucide-react";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -15,19 +15,19 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
 	return (
-		<div className=" h-screen w-screen flex flex-col">
-			<div className="h-56 bg-sabor">
-				<img
-					src="./casa.jpg"
-					alt="PARK"
-					className="bg-cover w-full bg-bottom"
-				/>
-			</div>
-			<div className="bg-familia h-full px-4">
-				<div className="bg-familia w-32 p-4 rounded-full mx-auto -mt-16">
+		<div className="w-full h-screen  flex flex-col">
+			<div
+				className="bg-sabor bg-cover bg-center w-full grow shrink-0 "
+				style={{ backgroundImage: "url(./casa.jpg)" }}
+			></div>
+			<div
+				className="bg-familia grow-0 shrink-0 px-4 bg-cover bg-center"
+				style={{ backgroundImage: "url(./bg-park.png)" }}
+			>
+				<div className="bg-familia border-4 border-sobral w-32 p-4 rounded-full mx-auto -mt-16">
 					<img src="./logo-park.png" alt="" />
 				</div>
-				<div className="flex flex-col mt-8 gap-2">
+				<div className="flex flex-col mt-8 gap-2 max-w-sm mx-auto">
 					<Link
 						to="/delivery"
 						target="_blank"
@@ -63,7 +63,8 @@ export default function Index() {
 						rel="noreferrer"
 						className="link"
 					>
-						<CakeIcon className="size-8" />
+						{/* <CakeIcon className="size-8" /> */}
+						<MartiniIcon className="size-8" />
 						Realize seu evento conosco
 					</Link>
 				</div>
@@ -94,7 +95,7 @@ export default function Index() {
 						<span>WhatsApp</span>
 					</a>
 				</div>
-				<div className="text-xs text-sobral opacity-50  text-center">
+				<div className="text-xs text-sobral opacity-50 pb-8  text-center">
 					© {new Date().getFullYear()} PARK - Sua aventura culinária
 					em Sobral
 				</div>
