@@ -27,6 +27,7 @@ export default function Index() {
 				<div className="bg-familia border-4 border-sobral w-32 p-4 rounded-full mx-auto -mt-16">
 					<img src="./logo-park.png" alt="" />
 				</div>
+				{/* link */}
 				<div className="flex flex-col mt-8 gap-2 max-w-sm mx-auto">
 					<Link
 						to="/delivery"
@@ -68,6 +69,7 @@ export default function Index() {
 						Realize seu evento conosco
 					</Link>
 				</div>
+				{/* Social */}
 				<div className="flex gap-4 my-8 text-sm text-sobral justify-center">
 					<a
 						href="https://instagram.com/parksobral"
@@ -95,6 +97,7 @@ export default function Index() {
 						<span>WhatsApp</span>
 					</a>
 				</div>
+				{/* Copyrights */}
 				<div className="text-xs text-sobral opacity-50 pb-8  text-center">
 					© {new Date().getFullYear()} PARK - Sua aventura culinária
 					em Sobral
