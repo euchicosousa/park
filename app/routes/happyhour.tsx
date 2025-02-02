@@ -2,7 +2,8 @@ import { useEffect } from "react";
 
 export default function HappyHour() {
 	useEffect(() => {
-		location.href = "https://parkchoppsobral.goomer.app/menu#1498899";
+		location.href =
+			"https://parkchoppsobral.goomer.app/menu?hash=2eNZw#1498899";
 	}, []);
 
 	return (
