@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 export default function Delivery() {
 	useEffect(() => {
+		location.href = "https://parksobral.saipos.com";
 		location.href = "https://parkchoppsobral.goomer.app/menu";
 	}, []);
 
