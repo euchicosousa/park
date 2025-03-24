@@ -38,7 +38,7 @@ export default function Index() {
 						<BikeIcon className="size-8" />
 						<span>Pedir Delivery</span>
 					</Link>
-					<Link
+					{/* <Link
 						to="/cardapio"
 						target="_blank"
 						rel="noreferrer"
@@ -46,8 +46,8 @@ export default function Index() {
 					>
 						<BookIcon className="size-8" />
 						<span>Cardápio Completo</span>
-					</Link>
-					<Link
+					</Link> */}
+					{/* <Link
 						to="/happyhour"
 						target="_blank"
 						rel="noreferrer"
@@ -55,7 +55,7 @@ export default function Index() {
 					>
 						<BeerIcon className="size-8" />
 						<span>Happy Hour</span>
-					</Link>
+					</Link> */}
 
 					<Link
 						to="/eventos"
