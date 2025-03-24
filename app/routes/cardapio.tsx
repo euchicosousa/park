@@ -2,7 +2,8 @@ import { useEffect } from "react";
 
 export default function Cardapio() {
 	useEffect(() => {
-		location.href = "https://parkchoppsobral.goomer.app/qrcode?hash=2eNZw";
+		// location.href = "https://parkchoppsobral.goomer.app/qrcode?hash=2eNZw";
+		location.href = "https://parksobral.saipos.com";
 	}, []);
 
 	return (
