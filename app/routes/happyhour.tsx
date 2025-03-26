@@ -4,7 +4,9 @@ export default function HappyHour() {
 	useEffect(() => {
 		location.href =
 			// "https://parkchoppsobral.goomer.app/menu?hash=2eNZw#1498899";
-			location.href = "https://parksobral.saipos.com";
+			// location.href = "https://parksobral.saipos.com";
+			location.href =
+				"https://drive.google.com/file/d/1dtk8Lr8-jIr_AVCnzbFvm-DbvyeMYsP1/view?usp=share_link";
 	}, []);
 
 	return (
