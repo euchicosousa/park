@@ -89,7 +89,7 @@ export default function Index() {
             <span>Como chegar</span>
           </a>
           <a
-            href="https://wa.me/558821440310"
+            href="/whatsapp"
             className="flex gap-2 font-bold items-center"
             target="_blank"
             rel="noreferrer"
