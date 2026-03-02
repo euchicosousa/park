@@ -17,7 +17,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <meta
           property="og:image"
-          content="https://parksobral.cnvt.link/og-park.png"
+          content="https://parksobral.cnvt.link/og-image.png"
         />
 
         <Links />
