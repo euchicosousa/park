@@ -18,7 +18,7 @@ export default function Index() {
     <div className="w-full h-screen  flex flex-col">
       <div
         className="bg-sabor bg-cover bg-center w-full grow shrink-0 absolute top-0 left-0 inset-0 z-0"
-        style={{ backgroundImage: "url(./park-frente.jpg)" }}
+        style={{ backgroundImage: "url(./park-frente.webp)" }}
       ></div>
       <div
         className="grow-0 shrink-0 px-4 bg-cover bg-center relative z-10 min-h-screen grid place-content-center bg-black/50"
