@@ -7,7 +7,7 @@ body {
 }
 
 .link {
-	@apply bg-sobral flex py-5 px-6 text-xl text-familia rounded-xl tracking-tighter font-semibold gap-2 items-center hover:bg-sabor hover:text-sobral  active:bg-sabor active:text-sobral;
+	@apply bg-sobral font-semibold flex py-5 px-6 text-xl text-familia rounded-xl tracking-tighter gap-2 items-center hover:bg-sabor hover:text-sobral  active:bg-sabor active:text-sobral;
 }
 
 .link svg {

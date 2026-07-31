@@ -1,6 +1,6 @@
 import { Link } from "@remix-run/react";
 import { MetaFunction } from "@vercel/remix";
-import { BeerIcon, BikeIcon, BookIcon, MartiniIcon } from "lucide-react";
+import { BeerIcon, BikeIcon, MartiniIcon } from "lucide-react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -17,18 +17,17 @@ export default function Index() {
   return (
     <div className="w-full h-screen  flex flex-col">
       <div
-        className="bg-sabor bg-cover bg-center w-full grow shrink-0 "
-        style={{ backgroundImage: "url(./casa.jpg)" }}
+        className="bg-sabor bg-cover bg-center w-full grow shrink-0 absolute top-0 left-0 inset-0 z-0"
+        style={{ backgroundImage: "url(./park-frente.jpg)" }}
       ></div>
       <div
-        className="bg-familia grow-0 shrink-0 px-4 bg-cover bg-center"
-        style={{ backgroundImage: "url(./bg-park.png)" }}
+        className="grow-0 shrink-0 px-4 bg-cover bg-center relative z-10 min-h-screen grid place-content-center bg-black/50"
       >
         <div className="bg-familia border-4 border-sobral w-32 p-4 rounded-full mx-auto -mt-16">
           <img src="./logo-park.png" alt="" />
         </div>
         {/* link */}
-        <div className="flex flex-col mt-8 gap-2 max-w-sm mx-auto">
+        <div className=" flex flex-col mt-8 gap-2 max-w-sm mx-auto">
           <Link
             to="/delivery"
             target="_blank"
@@ -73,7 +72,7 @@ export default function Index() {
         <div className="flex gap-4 my-8 text-sm text-sobral justify-center">
           <a
             href="https://instagram.com/parksobral"
-            className="flex gap-2 font-bold items-center"
+            className="flex gap-2 items-center"
             target="_blank"
             rel="noreferrer"
           >
@@ -81,7 +80,7 @@ export default function Index() {
           </a>
           <a
             href="/localizacao"
-            className="flex gap-2 font-bold items-center"
+            className="flex gap-2 items-center"
             target="_blank"
             rel="noreferrer"
           >
@@ -90,7 +89,7 @@ export default function Index() {
           </a>
           <a
             href="/whatsapp"
-            className="flex gap-2 font-bold items-center"
+            className="flex gap-2 items-center"
             target="_blank"
             rel="noreferrer"
           >
